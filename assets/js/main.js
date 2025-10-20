@@ -18,4 +18,3 @@ window.addEventListener('click', (e) => {
     popup.style.display = 'none';
   }
 });
-
