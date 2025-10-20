@@ -3,65 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AutoLock YEG | Car Locksmith Services in Edmonton" />
-  <meta name="author" content="AutoLock YEG" />
-  <title>AutoLock YEG</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Autolock YEG | Home</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <!-- Header -->
   <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">AutoLock <span>YEG</span></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul>
-      </nav>
-    </div>
+    <img src="assets/images/home-header.jpg" alt="Car Key Header">
+    <h1>Autolock YEG</h1>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" style="background-image: url('assets/images/hero-home.jpg');">
-    <div class="container">
-      <h1>Fast & Reliable Automotive Locksmith</h1>
-      <p>Locked out? Need a new car key? We provide 24/7 emergency locksmith services in Edmonton.</p>
-      <a href="services.html" class="btn-primary">See Our Services</a>
-    </div>
-  </section>
+  <main>
+    <section>
+      <h2>Our Services</h2>
+      <p>We provide fast, reliable car key unlocking and locksmith services in Edmonton.</p>
+      <button class="service-btn">Request Service</button>
+    </section>
+    <section>
+      <h2>About Us</h2>
+      <p>Autolock YEG is your trusted local car unlocking expert. Our team is certified and ready 24/7.</p>
+    </section>
+  </main>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
-      <h2>Why Choose AutoLock YEG?</h2>
-      <p>We specialize in all automotive locksmith services, providing fast response times, competitive pricing, and professional service. Our technicians are fully licensed, insured, and equipped with the latest technology.</p>
-      <ul>
-        <li>24/7 Emergency Lockout Service</li>
-        <li>Car Key Replacement & Programming</li>
-        <li>Ignition Repair & Broken Key Extraction</li>
-        <li>Serving Edmonton & Surrounding Areas</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Need Immediate Assistance?</h2>
-      <p>Call us now or request service online and we’ll be there fast!</p>
-      <a href="services.html" class="btn-primary">Request Service</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 AutoLock YEG. All rights reserved.</p>
+    <p>&copy; 2025 Autolock YEG</p>
   </footer>
 
+  <div id="service-popup">
+    <div class="popup-content">
+      <h2>Request Service</h2>
+      <form action="mailto:autolockyeg@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Service Request" required></textarea>
+        <button type="submit" class="service-btn">Send</button>
+        <button type="button" class="close-btn">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
