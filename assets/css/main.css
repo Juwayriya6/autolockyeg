@@ -1,1 +1,160 @@
 
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header / Hero */
+header {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header h1 {
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+  background-color: #89F336;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #C1121F;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Services popup button */
+.service-btn {
+  display: inline-block;
+  background-color: #C1121F;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #891010;
+}
+
+/* Popup form */
+#service-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+#service-popup .popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+}
+
+#service-popup .popup-content h2 {
+  margin-bottom: 1rem;
+  color: #89F336;
+}
+
+#service-popup .popup-content input,
+#service-popup .popup-content textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#service-popup .close-btn {
+  background-color: #C1121F;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #89F336;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+}
