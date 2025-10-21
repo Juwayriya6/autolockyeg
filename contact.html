@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autolock YEG | Contact</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
   <nav>
     <div class="logo">Autolock <span>YEG</span></div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="#" class="service-btn">Request Service</a></li>
     </ul>
   </nav>
 
-  <header id="hero">
-    <img src="assets/images/contact-header.png" alt="Contact Header">
-    <div class="hero-text">
-      <h1>Contact Autolock YEG</h1>
-      <p>Send us your car key service request directly</p>
+  <header>
+    <img src="assets/images/contact-header.png" alt="Contact Us">
+    <div class="header-text">
+      <h1>Contact Us</h1>
+      <p>Have questions or need assistance? Reach out to us!</p>
     </div>
   </header>
 
   <main>
-    <section class="contact">
-      <h2>Get In Touch</h2>
-      <form name="service-request" method="POST" data-netlify="true">
+    <section class="contact-form">
+      <h2>Request Service</h2>
+      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html">
         <input type="hidden" name="form-name" value="service-request">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -36,26 +34,17 @@
         <button type="submit" class="btn">Send Request</button>
       </form>
     </section>
+
+    <section class="service-area">
+      <h2>Service Area</h2>
+      <p>We operate throughout Edmonton and surrounding areas.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Autolock YEG. All rights reserved.</p>
+    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
   </footer>
 
- <!-- Popup Form -->
-<div id="service-popup">
-  <div class="popup-content">
-    <h2>Request Service</h2>
-    <form name="service-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
-      <input type="hidden" name="form-name" value="service-request">
-      <p class="hidden">
-        <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
-      </p>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="4" placeholder="Describe your issue" required></textarea>
-      <button type="submit" class="btn">Send Request</button>
-      <button type="button" class="close-btn">Close</button>
-    </form>
-  </div>
-</div>
+ 
+::contentReference[oaicite:0]{index=0}
+ 
