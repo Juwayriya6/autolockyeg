@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Autolock YEG | Edmonton Car Key Specialists</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-
   <nav>
     <div class="logo">Autolock <span>YEG</span></div>
     <ul class="nav-links">
@@ -17,9 +16,9 @@
     </ul>
   </nav>
 
-  <header id="hero">
+  <header>
     <img src="assets/images/home-header.png" alt="Car Locksmith Service">
-    <div class="hero-text">
+    <div class="header-text">
       <h1>Fast. Reliable. Professional.</h1>
       <p>24/7 Car Key Unlocking & Locksmith Services in Edmonton</p>
       <button class="service-btn">Request Service</button>
@@ -34,32 +33,25 @@
 
     <section class="services">
       <h2>Our Services</h2>
-      <div class="service-cards">
-        <div class="card">
-          <img src="assets/images/service1.png" alt="Emergency Car Unlocking">
-          <h3>Emergency Car Unlocking</h3>
-        </div>
-        <div class="card">
-          <img src="assets/images/service2.png" alt="Key Duplication & Replacement">
-          <h3>Key Duplication & Replacement</h3>
-        </div>
-        <div class="card">
-          <img src="assets/images/service3.png" alt="Key Fob Programming">
-          <h3>Key Fob Programming</h3>
-        </div>
-      </div>
+      <ul>
+        <li>Emergency Car Unlocking</li>
+        <li>Key Duplication & Replacement</li>
+        <li>Key Fob Programming</li>
+        <li>Broken Key Extraction</li>
+        <li>Ignition Repair</li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Autolock YEG. All rights reserved.</p>
+    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
   </footer>
 
   <!-- Popup Form -->
   <div id="service-popup">
     <div class="popup-content">
       <h2>Request Service</h2>
-      <form name="service-request" method="POST" data-netlify="true">
+      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html">
         <input type="hidden" name="form-name" value="service-request">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
@@ -70,6 +62,4 @@
     </div>
   </div>
 
-  <script src="assets/js/main.js"></script>
-</body>
-</html>
+  <script src="assets/js/main.js"></
