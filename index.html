@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Autolock YEG | Edmonton Car Key Specialists</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <!-- Navigation -->
+
   <nav>
     <div class="logo">Autolock <span>YEG</span></div>
     <ul class="nav-links">
@@ -17,10 +17,9 @@
     </ul>
   </nav>
 
-  <!-- Header -->
-  <header>
+  <header id="hero">
     <img src="assets/images/home-header.png" alt="Car Locksmith Service">
-    <div class="header-text">
+    <div class="hero-text">
       <h1>Fast. Reliable. Professional.</h1>
       <p>24/7 Car Key Unlocking & Locksmith Services in Edmonton</p>
       <button class="service-btn">Request Service</button>
@@ -35,33 +34,37 @@
 
     <section class="services">
       <h2>Our Services</h2>
-      <ul>
-        <li>Emergency Car Unlocking</li>
-        <li>Key Duplication & Replacement</li>
-        <li>Key Fob Programming</li>
-        <li>Broken Key Extraction</li>
-        <li>Ignition Repair</li>
-      </ul>
+      <div class="service-cards">
+        <div class="card">
+          <img src="assets/images/service1.png" alt="Emergency Car Unlocking">
+          <h3>Emergency Car Unlocking</h3>
+        </div>
+        <div class="card">
+          <img src="assets/images/service2.png" alt="Key Duplication & Replacement">
+          <h3>Key Duplication & Replacement</h3>
+        </div>
+        <div class="card">
+          <img src="assets/images/service3.png" alt="Key Fob Programming">
+          <h3>Key Fob Programming</h3>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
+    <p>&copy; 2025 Autolock YEG. All rights reserved.</p>
   </footer>
 
   <!-- Popup Form -->
   <div id="service-popup">
     <div class="popup-content">
       <h2>Request Service</h2>
-      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html" netlify-honeypot="bot-field">
+      <form name="service-request" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="service-request">
-        <p class="hidden">
-          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
-        </p>
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="4" placeholder="Describe your issue" required></textarea>
-        <button type="submit" class="service-btn">Send Request</button>
+        <button type="submit" class="btn">Send Request</button>
         <button type="button" class="close-btn">Close</button>
       </form>
     </div>
