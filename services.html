@@ -1,64 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Autolock YEG | Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoLock YEG — Services</title>
+  <meta name="description" content="Services: auto lockout, key cutting, residential and commercial locksmith solutions." />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Floating contacts -->
+  <a class="float-corner top-left" href="tel:PHONE_NUMBER" aria-label="Call now">📞 Call</a>
+  <a class="float-corner top-right" href="https://wa.me/WHATSAPP_NUMBER" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+  <a class="float-corner bottom-left" href="contact.html" aria-label="Request service">🧰 Request</a>
+  <a class="float-corner bottom-right" href="contact.html" aria-label="Contact">✉️ Contact</a>
 
-  <nav>
-    <div class="logo">Autolock <span>YEG</span></div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#" class="service-btn">Request Service</a></li>
-    </ul>
-  </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="/assets/images/home-header.webp" type="image/webp">
+          <img src="/assets/images/home-header.png" alt="AutoLock YEG" class="logo-inline">
+        </picture>
+      </a>
 
-  <header>
-    <img src="assets/images/services-header.png" alt="Our Services">
-    <div class="header-text">
-      <h1>Our Services</h1>
-      <p>Comprehensive car key and locksmith solutions</p>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta-phone" href="tel:PHONE_NUMBER">Call: PHONE_NUMBER</a>
+      <button class="nav-toggle" id="navToggleTop" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="services-list">
-      <ul>
-        <li>Emergency Car Unlocking</li>
-        <li>Key Duplication & Replacement</li>
-        <li>Key Fob Programming</li>
-        <li>Broken Key Extraction</li>
-        <li>Ignition Repair</li>
-        <li>Remote Key Replacement</li>
-      </ul>
+    <section class="section page-hero" data-aos="fade-up">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p class="section-sub">From emergency lockouts to commercial access systems — we do it all.</p>
+      </div>
+    </section>
+
+    <section class="section service-list" data-aos="fade-up">
+      <div class="container">
+        <div class="service-block" id="auto">
+          <div class="service-media">
+            <picture>
+              <source srcset="/assets/images/service1.webp" type="image/webp">
+              <img src="/assets/images/service1.png" alt="Auto lockout" />
+            </picture>
+          </div>
+          <div class="service-body">
+            <h2>Auto Lockout & Roadside Assistance</h2>
+            <p>Fast, damage-free entry, key replacement, and transponder programming on-site.</p>
+            <a href="contact.html" class="btn primary">Request Auto Service</a>
+          </div>
+        </div>
+
+        <div class="service-block reverse" id="keys">
+          <div class="service-media">
+            <picture>
+              <source srcset="/assets/images/service2.webp" type="image/webp">
+              <img src="/assets/images/service2.png" alt="Key cutting" />
+            </picture>
+          </div>
+          <div class="service-body">
+            <h2>Key Cutting & Programming</h2>
+            <p>Transponder keys, remote fobs, and smart keys programmed at your location.</p>
+            <a href="contact.html" class="btn primary">Request Key Service</a>
+          </div>
+        </div>
+
+        <div class="service-block" id="residential">
+          <div class="service-media">
+            <picture>
+              <source srcset="/assets/images/service3.webp" type="image/webp">
+              <img src="/assets/images/service3.png" alt="Residential locksmith" />
+            </picture>
+          </div>
+          <div class="service-body">
+            <h2>Residential Locksmith</h2>
+            <p>Rekeying, lock changes, smart lock installs and home security upgrades.</p>
+            <a href="contact.html" class="btn primary">Secure My Home</a>
+          </div>
+        </div>
+
+        <div class="service-block" id="commercial">
+          <div class="service-media">
+            <!-- optional local image or icon -->
+            <picture>
+              <source srcset="/assets/images/service1.webp" type="image/webp">
+              <img src="/assets/images/service1.png" alt="Commercial solutions" />
+            </picture>
+          </div>
+          <div class="service-body">
+            <h2>Commercial Solutions</h2>
+            <p>Access control systems, master keying, and on-site emergency repairs for businesses.</p>
+            <a href="contact.html" class="btn primary">Talk Commercial</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><small>© <span id="yearServices"></span> AutoLock YEG</small></div>
+      <nav class="ft-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </footer>
 
-  <!-- Popup Form -->
-  <div id="service-popup">
-    <div class="popup-content">
-      <h2>Request Service</h2>
-      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html">
-        <input type="hidden" name="form-name" value="service-request">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Describe your issue" required></textarea>
-        <button type="submit" class="btn">Send Request</button>
-        <button type="button" class="close-btn">Close</button>
-      </form>
-    </div>
-  </div>
-
-  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
