@@ -1,110 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AutoLock YEG — Contact</title>
-  <meta name="description" content="Contact AutoLock YEG for 24/7 locksmith service in Edmonton — call or request service online." />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autolock YEG | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Floating contacts -->
-  <a class="float-corner top-left" href="tel:PHONE_NUMBER" aria-label="Call now">📞 Call</a>
-  <a class="float-corner top-right" href="https://wa.me/WHATSAPP_NUMBER" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
-  <a class="float-corner bottom-left" href="mailto:info@autolockyeg.com" aria-label="Email">✉️ Email</a>
-  <a class="float-corner bottom-right" href="#request" aria-label="Request service">🧰 Request</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <picture>
-          <source srcset="/assets/images/home-header.webp" type="image/webp">
-          <img src="/assets/images/home-header.png" alt="AutoLock YEG" class="logo-inline">
-        </picture>
-      </a>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Autolock <span>YEG</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="service-btn">Request Service</a></li>
+    </ul>
+    <div class="mobile-menu-toggle">&#9776;</div>
+  </nav>
 
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <a class="cta-phone" href="tel:PHONE_NUMBER">Call: PHONE_NUMBER</a>
-      <button class="nav-toggle" id="navToggleContact" aria-label="Toggle navigation">☰</button>
+  <!-- Hero Section -->
+  <header>
+    <picture>
+      <source srcset="assets/images/contact-header.webp" type="image/webp">
+      <img src="assets/images/contact-header.png" alt="Contact Autolock YEG">
+    </picture>
+    <div class="header-text">
+      <h1>Contact Us</h1>
+      <p>Get in touch with our experts 24/7</p>
     </div>
   </header>
 
+  <!-- Main content -->
   <main>
-    <section class="section page-hero" data-aos="fade-up">
-      <div class="container">
-        <h1>Request Service / Contact</h1>
-        <p class="section-sub">We respond fast. Use the form below or call us 24/7.</p>
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Reach Autolock YEG</h2>
+        <p>Email: <a href="mailto:autolockyeg@gmail.com">autolockyeg@gmail.com</a></p>
+        <p>Phone: 780-XXX-XXXX</p>
+        <p>Service Area: Edmonton & Surrounding Areas</p>
       </div>
-    </section>
 
-    <section class="section contact-form-wrap" id="request" data-aos="fade-up">
-      <div class="container">
-        <!-- Netlify form -->
-        <form name="service-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
-          <input type="hidden" name="form-name" value="service-request" />
-          <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
-
-          <label>Full name<input type="text" name="name" required></label>
-          <label>Phone<input type="tel" name="phone" required></label>
-          <label>Email<input type="email" name="email"></label>
-          <label>Address / Location<textarea name="location"></textarea></label>
-          <label>Service required
-            <select name="service">
-              <option>Auto Lockout</option>
-              <option>Key Cutting</option>
-              <option>Residential</option>
-              <option>Commercial</option>
-            </select>
-          </label>
-
-          <div class="form-ctas">
-            <button type="submit" class="btn primary">Send Request</button>
-            <a class="btn ghost" href="tel:PHONE_NUMBER">Call Now</a>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="section contact-info" data-aos="fade-up">
-      <div class="container grid-contact">
-        <div class="card small">
-          <h3>Emergency Line</h3>
-          <a href="tel:PHONE_NUMBER">PHONE_NUMBER</a>
-        </div>
-        <div class="card small">
-          <h3>Email</h3>
-          <a href="mailto:info@autolockyeg.com">info@autolockyeg.com</a>
-        </div>
-        <div class="card small">
-          <h3>Service Area</h3>
-          <p>Edmonton & surrounding areas</p>
-        </div>
-      </div>
+      <form name="contact" method="POST" data-netlify="true" action="thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div><small>© <span id="yearContact"></span> AutoLock YEG</small></div>
-      <nav class="ft-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <footer>
+    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <!-- Floating corner contact buttons -->
+  <div class="float-corner top-left">
+    <a href="mailto:autolockyeg@gmail.com">Email Us</a>
+  </div>
+  <div class="float-corner top-right">
+    <a href="tel:780XXX0000">Call Us</a>
+  </div>
+  <div class="float-corner bottom-left">
+    <a href="contact.html">Contact Form</a>
+  </div>
+  <div class="float-corner bottom-right">
+    <a href="#" class="service-btn">Request Service</a>
+  </div>
+
+  <!-- Popup Form -->
+  <div id="service-popup">
+    <div class="popup-content">
+      <h2>Request Service</h2>
+      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html">
+        <input type="hidden" name="form-name" value="service-request">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Describe your issue" required></textarea>
+        <button type="submit" class="btn">Send Request</button>
+        <button type="button" class="close-btn">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
