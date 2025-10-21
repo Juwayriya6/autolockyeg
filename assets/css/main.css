@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,134 +6,140 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
   color: #333;
   line-height: 1.6;
 }
 
 /* Links */
 a {
-  text-decoration: none;
   color: inherit;
-}
-
-/* Buttons */
-button, .service-btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  padding: 0.75rem 1.5rem;
-  background-color: #007bff; /* primary blue */
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-button:hover, .service-btn:hover {
-  opacity: 0.9;
-}
-
-/* Header / Hero */
-header, #hero {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-header img, #hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.header-text, .hero-text {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(0,0,0,0.5);
-  padding: 1rem 2rem;
-  border-radius: 10px;
-}
-
-.header-text h1, .hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.header-text p, .hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  text-decoration: none;
 }
 
 /* Navigation */
 nav {
   width: 100%;
-  background-color: #fff;
+  background-color: #222;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 nav .logo {
+  color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
+}
+
+nav .logo span {
+  color: #f5a623; /* accent color */
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
-.nav-links li a {
-  color: #333;
-  font-weight: 500;
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-  color: #007bff;
+.nav-links a:hover {
+  color: #f5a623;
+}
+
+/* Header / Hero */
+header {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .header-text {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+}
+
+header .header-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header .header-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+header .header-text .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #f5a623;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+header .header-text .btn:hover {
+  background-color: #ffb84d;
 }
 
 /* Main content */
 main {
   max-width: 1200px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 section {
   margin-bottom: 3rem;
 }
 
-.about p, .services ul {
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+section h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+section p, section ul {
+  margin-bottom: 1rem;
 }
 
 .services ul {
-  list-style: disc;
-  margin-left: 1.5rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #007bff;
-  color: #fff;
+  list-style: disc inside;
 }
 
 /* Popup Form */
+.service-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #f5a623;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 #service-popup {
   position: fixed;
   top: 0;
@@ -157,7 +163,7 @@ footer {
 
 #service-popup .popup-content h2 {
   margin-bottom: 1rem;
-  color: #007bff;
+  color: #222;
 }
 
 #service-popup .popup-content input,
@@ -169,8 +175,8 @@ footer {
   border-radius: 5px;
 }
 
-#service-popup .close-btn {
-  background-color: #333;
+#service-popup .popup-content .close-btn {
+  background-color: #222;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -178,29 +184,25 @@ footer {
   border-radius: 5px;
 }
 
-/* Thank You Page Styling */
-.hero-text button {
-  background-color: #007bff;
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #222;
   color: #fff;
-  margin-top: 1rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  header, #hero {
-    height: 300px;
-  }
-
-  .header-text h1, .hero-text h1 {
-    font-size: 1.8rem;
+  header .header-text h1 {
+    font-size: 2rem;
   }
 
   nav {
     flex-direction: column;
-    gap: 1rem;
   }
 
-  nav .nav-links {
+  .nav-links {
     flex-direction: column;
     gap: 1rem;
   }
