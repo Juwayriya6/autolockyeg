@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Autolock YEG | Contact</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+
   <nav>
     <div class="logo">Autolock <span>YEG</span></div>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="#" class="service-btn">Request Service</a></li>
@@ -19,28 +20,34 @@
   </nav>
 
   <header>
-    <img src="assets/images/contact-header.png" alt="Contact Us">
+    <img src="assets/images/contact-header.png" alt="Contact Autolock YEG">
     <div class="header-text">
-      <h1>Contact Autolock YEG</h1>
-      <p>Reach us directly for fast service.</p>
+      <h1>Contact Us</h1>
+      <p>Get in touch with our experts 24/7</p>
     </div>
   </header>
 
   <main>
-    <section>
-      <h2>Get In Touch</h2>
-      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html">
-        <input type="hidden" name="form-name" value="service-request">
+    <section class="contact-section">
+      <div class="contact-info">
+        <h2>Reach Autolock YEG</h2>
+        <p>Email: <a href="mailto:autolockyeg@gmail.com">autolockyeg@gmail.com</a></p>
+        <p>Phone: 780-XXX-XXXX</p>
+        <p>Service Area: Edmonton & Surrounding Areas</p>
+      </div>
+
+      <form name="contact" method="POST" data-netlify="true" action="thank-you.html">
+        <input type="hidden" name="form-name" value="contact">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Request</button>
+        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Autolock YEG</p>
+    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
   </footer>
 
   <script src="assets/js/main.js"></script>
