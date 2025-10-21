@@ -1,9 +1,8 @@
-// Popup service form
-const serviceBtn = document.querySelectorAll('.service-btn');
 const popup = document.getElementById('service-popup');
-const closeBtn = document.querySelector('#service-popup .close-btn');
+const serviceBtns = document.querySelectorAll('.service-btn');
+const closeBtn = document.querySelector('.close-btn');
 
-serviceBtn.forEach(btn => {
+serviceBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     popup.style.display = 'flex';
   });
@@ -13,8 +12,6 @@ closeBtn.addEventListener('click', () => {
   popup.style.display = 'none';
 });
 
-window.addEventListener('click', (e) => {
-  if (e.target == popup) {
-    popup.style.display = 'none';
-  }
+window.addEventListener('click', e => {
+  if (e.target === popup) popup.style.display = 'none';
 });
