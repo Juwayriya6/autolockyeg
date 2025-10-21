@@ -3,49 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Autolock YEG | Contact</title>
+  <title>Contact Autolock YEG | 24/7 Locksmith Edmonton</title>
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
+    <div class="logo">Autolock <span>YEG</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="service-btn">Request Service</a></li>
+    </ul>
   </nav>
 
   <header>
-    <img src="assets/images/contact-header.png" alt="Locksmith Tools">
-    <h1>Contact Us</h1>
+    <img src="assets/images/contact-header.png" alt="Contact Autolock YEG">
+    <div class="header-text">
+      <h1>Get In Touch</h1>
+      <p>We’re here to help 24/7 — call or send a request anytime.</p>
+      <button class="service-btn">Request Service</button>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Get In Touch</h2>
-      <p>Send us your car key service request directly:</p>
-      <button class="service-btn">Request Service</button>
-    </section>
-
-    <section>
-      <h2>Service Area</h2>
-      <p>We operate throughout Edmonton and surrounding areas.</p>
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:autolockyeg@gmail.com">autolockyeg@gmail.com</a></p>
+      <p>Phone: <strong>+1 (587) 555-1234</strong></p>
+      <p>Service Area: Edmonton & surrounding regions</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Autolock YEG</p>
+    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
   </footer>
 
+  <!-- Popup Form -->
   <div id="service-popup">
     <div class="popup-content">
       <h2>Request Service</h2>
-      <form action="mailto:autolockyeg@gmail.com" method="post" enctype="text/plain">
+      <form name="service-request" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="service-request">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="4" placeholder="Your Service Request" required></textarea>
-        <button type="submit" class="service-btn">Send</button>
+        <textarea name="message" rows="4" placeholder="Describe your issue" required></textarea>
+        <button type="submit" class="btn">Send Request</button>
         <button type="button" class="close-btn">Close</button>
       </form>
     </div>
   </div>
+
+  <form name="service-request" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <textarea name="message"></textarea>
+  </form>
 
   <script src="assets/js/main.js"></script>
 </body>
