@@ -1,179 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AutoLock YEG — Home</title>
-  <meta name="description" content="AutoLock YEG — 24/7 locksmith services in Edmonton. Auto, residential, commercial." />
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autolock YEG | Edmonton Car Key Specialists</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Floating contact buttons in every corner -->
-  <a class="float-corner top-left" href="tel:PHONE_NUMBER" aria-label="Call now">📞 Call</a>
-  <a class="float-corner top-right" href="https://wa.me/WHATSAPP_NUMBER" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
-  <a class="float-corner bottom-left" href="contact.html" aria-label="Request service">🧰 Request</a>
-  <a class="float-corner bottom-right" href="#contact" aria-label="Contact">✉️ Contact</a>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <picture>
-          <source srcset="/assets/images/home-header.webp" type="image/webp">
-          <img src="/assets/images/home-header.png" alt="AutoLock YEG" class="logo-inline">
-        </picture>
-      </a>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Autolock <span>YEG</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="service-btn">Request Service</a></li>
+    </ul>
+    <div class="mobile-menu-toggle">&#9776;</div>
+  </nav>
 
-      <nav class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
-      <a class="cta-phone" href="tel:PHONE_NUMBER">Call: PHONE_NUMBER</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+  <!-- Hero Section -->
+  <header>
+    <picture>
+      <source srcset="assets/images/home-header.webp" type="image/webp">
+      <img src="assets/images/home-header.png" alt="Car Locksmith Service">
+    </picture>
+    <div class="header-text">
+      <h1>Fast. Reliable. Professional.</h1>
+      <p>24/7 Car Key Unlocking & Locksmith Services in Edmonton</p>
+      <button class="service-btn">Request Service</button>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Main content -->
   <main>
-    <section class="hero" id="home">
-      <div class="hero-media" role="img" aria-label="Mobile locksmith van">
-        <picture>
-          <source srcset="/assets/images/home-header.webp" type="image/webp">
-          <img src="/assets/images/home-header.png" alt="AutoLock YEG hero" />
-        </picture>
-      </div>
-
-      <div class="container hero-content" data-aos="fade-up">
-        <div class="hero-left">
-          <h1>Locked Out? We’ll Get You Back In — Fast</h1>
-          <p class="lead">24/7 mobile locksmith service in Edmonton — auto, residential & commercial. Quick response. Fair pricing.</p>
-          <div class="hero-ctas">
-            <a class="btn primary" href="tel:PHONE_NUMBER">Call Now</a>
-            <a class="btn ghost" href="contact.html">Request Service</a>
-          </div>
-          <ul class="trust-list">
-            <li>✅ 24/7 Emergency</li>
-            <li>✅ Mobile Service</li>
-            <li>✅ Licensed & Insured</li>
-          </ul>
-        </div>
-
-        <div class="hero-right" data-aos="zoom-in" data-aos-delay="200">
-          <div class="card">
-            <picture>
-              <source srcset="/assets/images/service1.webp" type="image/webp">
-              <img src="/assets/images/service1.png" alt="Auto lock service preview">
-            </picture>
-            <div class="card-text">
-              <h3>On-site Vehicle Assistance</h3>
-              <p>Damage-free entry & key programming.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="about">
+      <h2>Why Choose Autolock YEG?</h2>
+      <p>We’re Edmonton’s trusted auto locksmiths. Whether you’ve locked your keys inside, lost them, or need a new key programmed — we’ve got you covered. Available day and night with quick, affordable service.</p>
     </section>
 
-    <!-- Services preview -->
-    <section id="services" class="section services" data-aos="fade-up">
-      <div class="container">
-        <h2>Our Services</h2>
-        <p class="section-sub">Complete locksmith solutions for vehicles, homes, and businesses.</p>
-
-        <div class="services-grid">
-          <article class="service-card" data-aos="flip-left" data-aos-delay="60">
-            <picture>
-              <source srcset="/assets/images/service1.webp" type="image/webp">
-              <img src="/assets/images/service1.png" alt="Auto lockout">
-            </picture>
-            <h3>Auto Lockout</h3>
-            <p>Quick, damage-free entry and key replacement.</p>
-            <a href="services.html#auto" class="link-more">Learn more →</a>
-          </article>
-
-          <article class="service-card" data-aos="flip-left" data-aos-delay="110">
-            <picture>
-              <source srcset="/assets/images/service2.webp" type="image/webp">
-              <img src="/assets/images/service2.png" alt="Key cutting">
-            </picture>
-            <h3>Key Cutting & Programming</h3>
-            <p>Transponder & smart keys programmed on-site.</p>
-            <a href="services.html#keys" class="link-more">Learn more →</a>
-          </article>
-
-          <article class="service-card" data-aos="flip-left" data-aos-delay="160">
-            <picture>
-              <source srcset="/assets/images/service3.webp" type="image/webp">
-              <img src="/assets/images/service3.png" alt="Residential locksmith">
-            </picture>
-            <h3>Residential</h3>
-            <p>Rekeying, locks changed, high-security locks installed.</p>
-            <a href="services.html#residential" class="link-more">Learn more →</a>
-          </article>
-
-          <article class="service-card" data-aos="flip-left" data-aos-delay="210">
-            <h3>Commercial</h3>
-            <p>Access control, master keys, and emergency repair.</p>
-            <a href="services.html#commercial" class="link-more">Learn more →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section testimonials" data-aos="fade-up">
-      <div class="container">
-        <h2>Customer Reviews</h2>
-        <div class="test-grid">
-          <blockquote>
-            "Fast and professional — saved my day!"<cite>— J. D., Edmonton</cite>
-          </blockquote>
-          <blockquote>
-            "Great price and quick arrival. Highly recommended."<cite>— L. H., Edmonton</cite>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact preview -->
-    <section id="contact" class="section contact-preview" data-aos="fade-up">
-      <div class="container">
-        <h2>Need Help Now?</h2>
-        <p>Call us or request service — emergency arrivals available 24/7.</p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="tel:PHONE_NUMBER">Call Now</a>
-          <a class="btn ghost" href="contact.html">Request Service</a>
-        </div>
-      </div>
+    <section class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Emergency Car Unlocking</li>
+        <li>Key Duplication & Replacement</li>
+        <li>Key Fob Programming</li>
+        <li>Broken Key Extraction</li>
+        <li>Ignition Repair</li>
+      </ul>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="ft-left">
-        <small>© <span id="year"></span> AutoLock YEG</small>
-      </div>
-      <nav class="ft-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <footer>
+    <p>&copy; 2025 Autolock YEG | All Rights Reserved</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="script.js"></script>
+  <!-- Floating corner contact buttons -->
+  <div class="float-corner top-left">
+    <a href="mailto:autolockyeg@gmail.com">Email Us</a>
+  </div>
+  <div class="float-corner top-right">
+    <a href="tel:780XXX0000">Call Us</a>
+  </div>
+  <div class="float-corner bottom-left">
+    <a href="contact.html">Contact Form</a>
+  </div>
+  <div class="float-corner bottom-right">
+    <a href="#" class="service-btn">Request Service</a>
+  </div>
+
+  <!-- Popup Form -->
+  <div id="service-popup">
+    <div class="popup-content">
+      <h2>Request Service</h2>
+      <form name="service-request" method="POST" data-netlify="true" action="thank-you.html">
+        <input type="hidden" name="form-name" value="service-request">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Describe your issue" required></textarea>
+        <button type="submit" class="btn">Send Request</button>
+        <button type="button" class="close-btn">Close</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
